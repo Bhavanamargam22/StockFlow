@@ -19,6 +19,9 @@ ALLOWED_HOSTS = [
     ).split(",")
     if host.strip()
 ]
+CSRF_TRUSTED_ORIGINS = [
+    "https://stockflow-app-es4f.onrender.com",
+]
 
 INSTALLED_APPS = [
     "django.contrib.admin",
